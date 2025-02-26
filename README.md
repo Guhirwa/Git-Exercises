@@ -197,3 +197,54 @@ gymiriba@Iribas-iMac-2 GIT-EXERCISE % git push origin --delete test
 To https://github.com/Guhirwa/Git-Exercises.git
  - [deleted]         test
 gymiriba@Iribas-iMac-2 GIT-EXERCISE % 
+
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git branch
+* dev
+  main
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git checkout main
+M       README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git branch
+  dev
+* main
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git push origin main
+Everything up-to-date
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git add .
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git commit - "Uploading my terminal history"
+error: pathspec '-' did not match any file(s) known to git
+error: pathspec 'Uploading my terminal history' did not match any file(s) known to git
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git commit -m  "Uploading my terminal history"
+[main 76fbc6c] Uploading my terminal history
+ Committer: Gym Iriba <gymiriba@Iribas-iMac-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 192 insertions(+)
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % git push origin main                          
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.72 KiB | 1.72 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Guhirwa/Git-Exercises.git
+   c755ae5..76fbc6c  main -> main
+gymiriba@Iribas-iMac-2 GIT-EXERCISE % 
